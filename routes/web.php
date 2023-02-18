@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('/', StudentsController::class);
 });
 //resource controller for Users table
 Route::resource('students', StudentsController::class);
