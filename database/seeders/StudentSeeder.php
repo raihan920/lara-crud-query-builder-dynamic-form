@@ -21,6 +21,9 @@ class StudentSeeder extends Seeder
                 'name' => $faker->name(),
                 'email' => $faker->email(),
                 'phone_number' => $faker->phoneNumber(),
+                'testify' => $faker->boolean(),
+                'sex' => $faker->randomElement(['male','female']),
+                'comment' => $faker->text(),
                 'created_at' => now()->toDateTimeString(),
                 'updated_at' => now()->toDateTimeString()
             ]);
