@@ -40,6 +40,9 @@ class StudentsController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'phone_number' => $request->phone_number,
+            'testify' => $request->testify ?? 0,
+            'sex' => $request->sex,
+            'comment' => $request->comment ?? null,
             'created_at' => now()->toDateTimeString(),
             'updated_at' => now()->toDateTimeString()
         ]);
@@ -92,6 +95,9 @@ class StudentsController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'phone_number' => $request->phone_number,
+            'testify' => $request->testify ?? 0,
+            'sex' => $request->sex,
+            'comment' => $request->comment ?? null,
             'created_at' => now()->toDateTimeString(),
             'updated_at' => now()->toDateTimeString()
         ]);

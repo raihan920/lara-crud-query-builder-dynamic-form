@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('phone_number', 20);
             $table->boolean('testify')->default(0);
             $table->enum('sex', ['male','female']);
-            $table->text('comment')->default("");
+            $table->text('comment')->nullable();
             $table->timestamps();
         });
     }

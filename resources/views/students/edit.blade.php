@@ -46,6 +46,32 @@
                     Please enter your shipping address.
                 </div>
             </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sex" value="male" id="male" @checked(old('sex', $student->sex))>
+                <label class="form-check-label" for="male">
+                    Male
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sex" id="female" value="female" @checked(old('sex', $student->sex))>
+                <label class="form-check-label" for="female">
+                    Female
+                </label>
+            </div>
+
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" name="comment" id="comment"></textarea>
+                <label for="comment">Comments</label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="1" name="testify" id="testify" @checked(old('testify', $student->testify))>
+                <label class="form-check-label" for="testify">
+                    I hereby testify that all the given information is true to the best of my knowledge.
+                </label>
+            </div>
+
         </div>
         <hr>
         <button class="w-100 btn btn-primary btn-lg" type="submit">Update Data</button>
