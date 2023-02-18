@@ -1,6 +1,8 @@
+<x-page-title title="View Students Record"></x-page-title>
 @extends('master')
 
 @section('content')
+
 <h1 class="text-center py-2">View Students Records</h1>
 <p>
     <a href="{{ url()->previous() }}" type="button" class="btn btn-dark">Go Back</a>

@@ -1,3 +1,4 @@
+<x-page-title title="View Detailed Students Record"></x-page-title>
 @extends('master')
 
 @section('content')

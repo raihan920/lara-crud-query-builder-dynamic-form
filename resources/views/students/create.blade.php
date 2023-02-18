@@ -1,3 +1,4 @@
+<x-page-title title="Create New Students Record"></x-page-title>
 @extends('master')
 
 @section('content')
